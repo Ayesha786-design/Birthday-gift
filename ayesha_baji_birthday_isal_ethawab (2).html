@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Birthday & Isal-e-Thawab for Ayesha Baji</title>
+<style>
+  body {
+    margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to top, #001f3f, #0074D9);
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://i.ibb.co/N7Nq6Kg/medina-sky-nur.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .container {
+    background: rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 15px;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    color: #ffe066;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  audio {
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+  }
+  button {
+    margin-top: 30px;
+    background: #ffd700;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #003366;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #ffea00;
+  }
+  #dua-popup {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #001f3f;
+    padding: 25px 35px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #ffd700;
+    max-width: 90%;
+    color: #ffd700;
+    font-size: 1.3em;
+  }
+  #dua-popup button {
+    background: #003366;
+    color: white;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🎉 A Blessed Birthday Surprise for Ayesha Baji 🎁</h1>
+  <p>
+    On your special day, a heartfelt gift has been dedicated in your name:<br>
+    - A full recitation of Surah Yaseen 📖<br>
+    - Sending Salawat (Durood) upon the Prophet ﷺ<br>
+    - Feeding orphans and the needy 🍱<br><br>
+    May Allah bless your life with health, barakah, and endless light.<br>
+    May He grant you a place in Jannat‑ul‑Firdous and keep your heart forever connected to Madina.<br><br>
+    <em>اللهم بارك لها في عمرها، واغفر لها، واجعلها من أهل الجنة.</em><br><br>
+    This is not just a gift, it’s a prayer wrapped in love and light.
+  </p>
+  <audio controls autoplay>
+    <source src="https://download.dawateislami.net/Audio/Naat/English%20Naat/Bulalo%20Phir%20Mujhay%20Ay%20Shah%20e%20Bahr%20o%20Bar%20Madinay%20Main.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button onclick="showDua()">Make Dua 🙏</button>
+</div>
+
+<div id="dua-popup">
+  <p>اللهم بارك لها في عمرها، واغفر لها، واجعلها من أهل الجنة</p>
+  <button onclick="hideDua()">Close</button>
+</div>
+
+<script>
+  function showDua() {
+    document.getElementById('dua-popup').style.display = 'block';
+  }
+  function hideDua() {
+    document.getElementById('dua-popup').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>
